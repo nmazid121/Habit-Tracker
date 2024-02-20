@@ -1,0 +1,24 @@
+<body>
+
+    <!-- we are simply running the script with the id of root and outputting everything on this div-->
+    <div id = "root"></div>
+
+    <!-- this script we are running will be assigned to a root element named root-->
+    <script >
+        // const rootElement, creates an variable, and html uses the method 
+        // get element by id, and will search for an element with the id of root
+
+        // likewise the const variable element will use the method createElement for make a div, a divider
+        // in memory, initializing a div element
+        const rootElement = document.getElementById('root')
+        const element = document.createElement('div')
+
+        // uses the element variable which is assigned to the div, then uses textContent method
+        // to assign a string to the div element
+        // using the element const, we also assign a class name to the element called container so that
+        // we can style 'Hello world' later if we need to
+        element.textContent = 'Hello World!'
+        element.className = 'container'
+        rootElement.appendChild(element)
+    </script>
+</body>
