@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habit Tracker</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  .tracker {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  .day {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+  }
+  .habit-1 { background-color: #c6e48b; }
+  .habit-2 { background-color: #7bc96f; }
+  .habit-3 { background-color: #239a3b; }
+  .habit-4 { background-color: #196127; }
+  .month {
+    text-align: center;
+    margin: 20px 0;
+  }
+</style>
+</head>
+<body>
+<div class="tracker">
+  <!-- Repeat this pattern for each month, adjusting the number of days as needed -->
+  <!-- Example for one month -->
+  <div class="month">January</div>
+  <!-- Fill in the following divs with the appropriate habit class based on activity -->
+  <div class="day habit-1"></div>
+  <div class="day habit-2"></div>
+  <div class="day habit-3"></div>
+  <!-- ... more days ... -->
+  <div class="day habit-4"></div>
+  <div class="day habit-1"></div>
+  <!-- End of example month -->
+</div>
+</body>
+</html>
